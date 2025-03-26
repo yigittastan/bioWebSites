@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiğit Umre Taştan - Yazılım Geliştirici</title>
+    <link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: rgb(216, 21, 216);
+            --background-color: #f4f4f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://taplink.st/p/b/8/1/5/35470325.svg') no-repeat center center/cover;
+        }
+
+        .backgroundEffect {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .pageLink {
+            width: 35%;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .pageLink h2 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .pageLink p {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pageLink button {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: auto;
+            min-width: 120px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pageLink button:hover {
+            background: purple;
+        }
+
+        .pageLink button i {
+            margin-right: 5px;
+        }
+
+        .pageContent {
+            width: 65%;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .pageContent h2, .pageContent h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .pageContent ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pageContent li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 768px) {
+            .backgroundEffect {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            .pageLink, .pageContent {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="backgroundEffect">
+        <div class="pageLink">
+            <img src="Images/foto_photo.png" alt="Profil Fotoğrafı" class="profile-img">
+            <h2>HY! I'M Yiğit Umre Taştan</h2>
+            <p>Full Stack Developer | Mobile Developer | Senior Developer</p>
+            <div class="buttons-container">
+                <a href="https://github.com/yigitumretastan" target="_blank">
+                    <button><i class="fab fa-github"></i>GitHub</button>
+                </a>
+                <a href="https://stackoverflow.com/users/30024898/yigitumretastan" target="_blank">
+                    <button><i class="fab fa-stack-overflow"></i>StackOverflow</button>
+                </a>
+                <a href="https://www.linkedin.com/in/yigitumretastan/" target="_blank">
+                    <button><i class="fab fa-linkedin"></i>LinkedIn</button>
+                </a>
+                <a href="https://leetcode.com/u/YigitUmreTastan/" target="_blank">
+                    <button><i class="fas fa-code"></i>LeetCode</button>
+                </a>
+                <a href="https://www.hackerrank.com/profile/yigitumretastan" target="_blank">
+                    <button><i class="fab fa-hackerrank"></i>HackerRank</button>
+                </a>
+                <a href="https://medium.com/@yigitumretastan" target="_blank">
+                    <button><i class="fab fa-medium"></i>Medium</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="pageContent">
+            <h2>About Me</h2>
+            <p>
+                Merhaba! Ben Yiğit Umre Taştan. Yazılım dünyasına olan ilgimle kendimi sürekli geliştiren ve öğrenmeye açık bir geliştiriciyim.
+            </p>
+            
+            <h3>Eğitim</h3>
+            <ul>
+                <li>
+                    <strong>Lise:</strong> Karabağlar Cumhuriyet Mesleki ve Teknik Anadolu Lisesi (2021-2025)
+                    <br>Bilişim Teknolojileri Alanı
+                </li>
+            </ul>
+            
+            <h3>Çalışma Deneyimi</h3>
+            <ul>
+                <li>
+                    <strong>Levelend Yazılım A.Ş.</strong> - Lise Stajyeri (11/09/2024 - 20/06/2025)
+                    <br>Web ve Mobil Uygulama Geliştirme Stajı
+                </li>
+            </ul>
+            
+            <h3>Sertifikalar</h3>
+            <ul>
+                <li>Google Ads Sertifikası (Yakında)</li>
+                <li>Yazılım Geliştirme Bootcamp Katılım Sertifikası (Yakında)</li>
+            </ul>
+            
+            <h3>Beceriler</h3>
+            <div class="skills-container">
+                <span class="skill-badge">Full Stack Development</span>
+                <span class="skill-badge">Mobile Development</span>
+                <span class="skill-badge">HTML/CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Git/GitHub</span>
+            </div>
+            
+            <h3>İletişim</h3>
+            <p>
+                E-posta: yigitumretastan.dev@gmail.com<br>        
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
